@@ -91,13 +91,25 @@ button {
     object-fit: cover;
 }
 .front p {
-    width: 45%; /* right half */
+    width: 60%; /* right half */
     font-size: 20px;
     line-height: 1.4;
 }
-@media screen and (max-width: 600px) {
-  .your-text-class {
-    font-size: 14px; /* clean, readable */
-    line-height: 1.4; /* keeps it airy */
+/* This makes sure the text scales on small screens */
+@media (max-width: 768px) {
+  .card-text {
+    font-size: 14px; /* shrink text size for phones */
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+
+  .card {
+    width: 90%; /* shrink card width for phones */
+    padding: 10px;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
   }
 }
