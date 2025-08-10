@@ -95,3 +95,9 @@ button {
     font-size: 20px;
     line-height: 1.4;
 }
+@media screen and (max-width: 600px) {
+  .your-text-class {
+    font-size: 14px; /* clean, readable */
+    line-height: 1.4; /* keeps it airy */
+  }
+}
