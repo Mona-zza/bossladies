@@ -91,25 +91,20 @@ button {
     object-fit: cover;
 }
 .front p {
-    width: 60%; /* right half */
+    width: 45%; /* right half */
     font-size: 20px;
     line-height: 1.4;
 }
-/* This makes sure the text scales on small screens */
+.flipbook-page {
+  overflow: hidden;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
 @media (max-width: 768px) {
-  .card-text {
-    font-size: 14px; /* shrink text size for phones */
+  .flipbook-page {
+    font-size: 14px; /* Adjust as needed */
     line-height: 1.4;
-    word-wrap: break-word;
-  }
-
-  .card {
-    width: 90%; /* shrink card width for phones */
-    padding: 10px;
-  }
-
-  .card img {
-    max-width: 100%;
-    height: auto;
   }
 }
