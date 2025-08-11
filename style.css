@@ -102,9 +102,12 @@ button {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+/* Force font update on mobile */
+@media (max-width: 668px) {
   .flipbook-page {
-    font-size: 14px; /* Adjust as needed */
-    line-height: 1.4;
+    font-family: Arial, sans-serif !important; /* Change to your desired font */
+    font-size: 14px !important; /* Adjust size */
+    line-height: 1.5 !important;
+    -webkit-text-size-adjust: 100%; /* Fix iOS zoom */
   }
 }
