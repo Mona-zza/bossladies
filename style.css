@@ -92,8 +92,10 @@ button {
 }
 .front p {
     width: 45%; /* right half */
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.4;
+    text-align: left;
+    padding:10px;
 }
 .flipbook-page {
   overflow: hidden;
@@ -101,38 +103,8 @@ button {
   box-sizing: border-box;
   padding: 10px;
 }
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-    body {
-        height: auto;
-        padding: 10px;
-    }
-    
-    .book {
-        height: 500px; /* Give more height for mobile */
-    }
-    
-    .front {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-        overflow-y: auto;
-    }
-    
-    .front img {
-        width: 70%;
-        margin-bottom: 15px;
-    }
-    
-    .front p {
-        width: 100%;
-        padding-left: 0;
-        font-size: 16px;
-        text-align: center;
-    }
-    
-    button {
-        font-size: 30px;
-        margin: 0 10px;
+@media (max-width:768px) {
+    .front p{
+        font-size:14px;
     }
 }
